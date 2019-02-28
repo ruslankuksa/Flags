@@ -20,13 +20,12 @@ class LevelsController: UIViewController, UIScrollViewDelegate {
     private var levelOfDifficult: String = ""
     private var guessedFlags: Int = 0
     
-    //private let levelsOfDifficult = ["Tourist", "Teacher", "Captain", "Ambassador", "Pathfinder"]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         scrollView.delegate = self
+        
         
     }
     
@@ -38,11 +37,11 @@ class LevelsController: UIViewController, UIScrollViewDelegate {
         for button in levelButtons {
             button.layer.cornerRadius = 10
             guessedFlags += defaults.integer(forKey: button.currentTitle!)
+            
+            if defaults.integer(forKey: button.currentTitle!) == 20 {
+                button.setTitleColor(UIColor(hexString: "#C4E538"), for: .normal)
+            }
         }
-        
-//        for each in levelsOfDifficult {
-//            guessedFlags += defaults.integer(forKey: each)
-//        }
         
         guessedFlagsCountLabel.text = "\(guessedFlags)/200"
         
@@ -51,7 +50,6 @@ class LevelsController: UIViewController, UIScrollViewDelegate {
     @IBAction func buttonPressed(_ sender: UIButton) {
         index = sender.tag
         levelOfDifficult = sender.currentTitle!
-        print(levelOfDifficult)
         self.performSegue(withIdentifier: "play", sender: self)
     }
     
@@ -63,4 +61,5 @@ class LevelsController: UIViewController, UIScrollViewDelegate {
             destinationVC.difficultLevel = levelOfDifficult
         }
     }
+
 }

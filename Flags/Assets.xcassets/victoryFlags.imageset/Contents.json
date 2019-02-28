@@ -6,12 +6,12 @@
     },
     {
       "idiom" : "universal",
-      "filename" : "spaceFlag@2x.png",
+      "filename" : "victoryFlags@2x.png",
       "scale" : "2x"
     },
     {
       "idiom" : "universal",
-      "filename" : "spaceFlag@3x.png",
+      "filename" : "victoryFlags@3x.png",
       "scale" : "3x"
     }
   ],

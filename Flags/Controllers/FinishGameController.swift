@@ -9,34 +9,19 @@
 import UIKit
 
 class FinishGameController: UIViewController {
-    @IBOutlet var flagsScoreLabel: UILabel!
-    @IBOutlet var statusLabel: UILabel!
     @IBOutlet var menuButton: UIButton!
     @IBOutlet var refreshButton: UIButton!
+    @IBOutlet var victoryBanner: UIImageView!
+    @IBOutlet var gameOverImage: UIImageView!
     
     var flagsArray = [Countries]()
-    var guessedFlags = 0
-    var difficult: String = ""
+    //var guessedFlags = 0
+    //var difficult: String = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
-        flagsScoreLabel.text = "\(guessedFlags)/20"
-        print(difficult)
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        let defaults = UserDefaults.standard
-        
-        if defaults.value(forKey: difficult) != nil {
-            if guessedFlags > defaults.value(forKey: difficult) as! Int {
-                defaults.setValue(guessedFlags, forKey: difficult)
-            }
-        } else {
-            defaults.setValue(guessedFlags, forKey: difficult)
-        }
-        
     }
     
     @IBAction func buttonPressed(_ sender: UIButton) {

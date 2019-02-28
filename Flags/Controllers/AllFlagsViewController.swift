@@ -45,11 +45,12 @@ class AllFlagsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "flagCell") as! FlagCell
         cell.countryNameLabel.sizeToFit()
-        cell.countryNameLabel.adjustsFontSizeToFitWidth = true
-        //        cell.countryNameLabel.numberOfLines = 0
+        cell.countryNameLabel.numberOfLines = 0
         
-        cell.countryNameLabel.text = countries[indexPath.row].countryName
-        cell.flagImage.image = UIImage(named: countries[indexPath.row].flagImageName)
+        DispatchQueue.main.async {
+            cell.countryNameLabel.text = self.countries[indexPath.row].countryName
+            cell.flagImage.image = UIImage(named: self.countries[indexPath.row].flagImageName)
+        }
         
         return cell
     }
@@ -57,4 +58,5 @@ class AllFlagsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
+    
 }

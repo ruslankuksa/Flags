@@ -21,10 +21,12 @@ class PlayViewController: UIViewController {
     @IBOutlet var lifesBarImages: [UIImageView]!
     
     var allFlags = [Countries]()
+    private var allButtons = [UIButton]()
     private var correctAnswer = 0
     private var flagNumber: Int = 0
     private var numberOfLives: Int = 3
     private var numberOfGuessedFlags: Int = 0
+    private let defaults = UserDefaults.standard
     
     private var previousFlags = [String]()
     var difficultLevel: String = ""
@@ -32,6 +34,7 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        allButtons = [flag1, flag2, flag3, flag4]
         updateUI()
     }
     
@@ -45,8 +48,7 @@ class PlayViewController: UIViewController {
     
     func loadFlags() {
         
-        let alphaOfButtons = [flag1, flag2, flag3, flag4]
-        for each in alphaOfButtons { each?.isEnabled = true }
+        for each in allButtons { each.isEnabled = true }
         
         allFlags.shuffle()
         
@@ -68,41 +70,43 @@ class PlayViewController: UIViewController {
 
     
     func updateUI()  {
-        progressBar.frame.size.width = (view.frame.size.width / 20) * CGFloat(flagNumber)
-        scoreLabel.text = "Guessed: \(numberOfGuessedFlags)/\(allFlags.count)"
+        scoreLabel.text = NSLocalizedString("Guessed: ", comment: "") + "\(numberOfGuessedFlags)/\(allFlags.count)"
         
         if flagNumber < allFlags.count && numberOfLives > 0 {
             loadFlags()
         }
+        
+        if flagNumber <= allFlags.count && numberOfLives > 0 {
+            progressBar.frame.size.width = (view.frame.size.width / 20) * CGFloat(flagNumber)
+        }
     }
     
     @IBAction func flagButtonPressed(_ sender: UIButton) {
-        let buttons = [flag1, flag2, flag3, flag4]
         
         if numberOfLives > 0 && flagNumber < allFlags.count {
-            if sender.tag == correctAnswer {
-                
-                DispatchQueue.main.async {
-                    self.countryNameLabel.textColor = UIColor.green
+            
+            if sender.tag == self.correctAnswer {
                     
-                    for button in buttons {
-                        if button?.tag != sender.tag {
-                            button?.isEnabled = false
-                        }
+                self.countryNameLabel.textColor = UIColor.green
+                    
+                for button in self.allButtons {
+                    if button.tag != sender.tag {
+                        button.isEnabled = false
                     }
                 }
-                
-                numberOfGuessedFlags += 1
-                
+                    
+                self.numberOfGuessedFlags += 1
+                    
             } else {
-                
-                numberOfLives -= 1
-                sender.isEnabled = false
-                
-                DispatchQueue.main.async {
-                    self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyFlag")
-                    self.countryNameLabel.textColor = UIColor.red
+                    
+                self.numberOfLives -= 1
+                self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyFlag")
+                self.countryNameLabel.textColor = UIColor.red
+                    
+                for each in self.allButtons {
+                    each.isEnabled = false
                 }
+                    
             }
             
             flagNumber += 1
@@ -125,23 +129,37 @@ class PlayViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destinationVC = segue.destination as? FinishGameController {
-            destinationVC.guessedFlags = numberOfGuessedFlags
+            //destinationVC.guessedFlags = numberOfGuessedFlags
+            //destinationVC.difficult = difficultLevel
             destinationVC.flagsArray = allFlags
-            destinationVC.difficult = difficultLevel
             
             DispatchQueue.main.async {
+                
                 if self.numberOfLives == 0 {
                     destinationVC.view.backgroundColor = UIColor(hexString: "DF6070")
-                    destinationVC.statusLabel.text = "You Lose!"
                     destinationVC.menuButton.setImage(UIImage(named: "menuGreen"), for: .normal)
                     destinationVC.refreshButton.setImage(UIImage(named: "refreshGreen"), for: .normal)
+                    destinationVC.victoryBanner.isHidden = true
+                    destinationVC.gameOverImage.image = UIImage(named: "whiteFlag")
                 } else {
                     destinationVC.view.backgroundColor = UIColor(hexString: "00B894")
-                    destinationVC.statusLabel.text = "Victory!"
                     destinationVC.menuButton.setImage(UIImage(named: "menuRed"), for: .normal)
                     destinationVC.refreshButton.setImage(UIImage(named: "refreshRed"), for: .normal)
+                    
+                    DispatchQueue.global(qos: .background).async(execute: {
+                        if self.defaults.value(forKey: self.difficultLevel) != nil {
+                            if self.numberOfGuessedFlags > self.defaults.value(forKey: self.difficultLevel) as! Int {
+                                self.defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
+                            }
+                        } else {
+                            self.defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
+                        }
+                    })
+                    
                 }
+                
             }
+            
         }
     }
 }
