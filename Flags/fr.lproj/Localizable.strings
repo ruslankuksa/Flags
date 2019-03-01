@@ -1,0 +1,603 @@
+/* No comment provided by engineer. */
+"Afghanistan" = "Afghanistan";
+
+/* No comment provided by engineer. */
+"Albania" = "Albanie";
+
+/* No comment provided by engineer. */
+"Algeria" = "Algérie";
+
+/* No comment provided by engineer. */
+"Andorra" = "Andorre";
+
+/* No comment provided by engineer. */
+"Angola" = "Angola";
+
+/* No comment provided by engineer. */
+"Antigua and Barbuda" = "Antigua-et-Barbuda";
+
+/* No comment provided by engineer. */
+"Argentina" = "Argentine";
+
+/* No comment provided by engineer. */
+"Armenia" = "Arménie";
+
+/* No comment provided by engineer. */
+"Australia" = "Australie";
+
+/* No comment provided by engineer. */
+"Austria" = "L'Autriche";
+
+/* No comment provided by engineer. */
+"Azerbaijan" = "Azerbaïdjan";
+
+/* No comment provided by engineer. */
+"Bahamas" = "Bahamas";
+
+/* No comment provided by engineer. */
+"Bahrain" = "Bahrein";
+
+/* No comment provided by engineer. */
+"Bangladesh" = "Bangladesh";
+
+/* No comment provided by engineer. */
+"Barbados" = "Barbade";
+
+/* No comment provided by engineer. */
+"Belarus" = "Biélorussie";
+
+/* No comment provided by engineer. */
+"Belgium" = "Belgique";
+
+/* No comment provided by engineer. */
+"Belize" = "Belize";
+
+/* No comment provided by engineer. */
+"Benin" = "Bénin";
+
+/* No comment provided by engineer. */
+"Bhutan" = "Bhoutan";
+
+/* No comment provided by engineer. */
+"Bolivia" = "Bolivie";
+
+/* No comment provided by engineer. */
+"Bosnia and Herzegovina" = "Bosnie Herzégovine";
+
+/* No comment provided by engineer. */
+"Botswana" = "Botswana";
+
+/* No comment provided by engineer. */
+"Brazil" = "Brésil";
+
+/* No comment provided by engineer. */
+"Brunei" = "Brunei";
+
+/* No comment provided by engineer. */
+"Bulgaria" = "Bulgarie";
+
+/* No comment provided by engineer. */
+"Burkina Faso" = "Burkina Faso";
+
+/* No comment provided by engineer. */
+"Burundi" = "Burundi";
+
+/* No comment provided by engineer. */
+"Cabo Verde" = "Cabo Verde";
+
+/* No comment provided by engineer. */
+"Cambodia" = "Cambodge";
+
+/* No comment provided by engineer. */
+"Cameroon" = "Cameroun";
+
+/* No comment provided by engineer. */
+"Canada" = "Canada";
+
+/* No comment provided by engineer. */
+"Central African Republic" = "République Centrafricaine";
+
+/* No comment provided by engineer. */
+"Chad" = "Tchad";
+
+/* No comment provided by engineer. */
+"China" = "Chine";
+
+/* No comment provided by engineer. */
+"Colombia" = "Colombie";
+
+/* No comment provided by engineer. */
+"Comoros" = "Les Comores";
+
+/* No comment provided by engineer. */
+"Cook Islands" = "les Îles Cook";
+
+/* No comment provided by engineer. */
+"Costa Rica" = "Costa Rica";
+
+/* No comment provided by engineer. */
+"Croatia" = "Croatie";
+
+/* No comment provided by engineer. */
+"Cuba" = "Cuba";
+
+/* No comment provided by engineer. */
+"Cyprus" = "Chypre";
+
+/* No comment provided by engineer. */
+"Czech Republic" = "République Tchèque";
+
+/* No comment provided by engineer. */
+"Democratic Republic of the Congo" = "République Démocratique du Congo";
+
+/* No comment provided by engineer. */
+"Denmark" = "Danemark";
+
+/* No comment provided by engineer. */
+"Djibouti" = "Djibouti";
+
+/* No comment provided by engineer. */
+"Dominica" = "La Dominique";
+
+/* No comment provided by engineer. */
+"Dominican Republic" = "République Dominicaine";
+
+/* No comment provided by engineer. */
+"East Timor" = "Timor-Leste";
+
+/* No comment provided by engineer. */
+"Ecuador" = "Équateur";
+
+/* No comment provided by engineer. */
+"Egypt" = "Egypte";
+
+/* No comment provided by engineer. */
+"El Salvador" = "Le Salvador";
+
+/* No comment provided by engineer. */
+"England" = "Angleterre";
+
+/* No comment provided by engineer. */
+"Equatorial Guinea" = "Guinée Équatoriale";
+
+/* No comment provided by engineer. */
+"Eritrea" = "Erythrée";
+
+/* No comment provided by engineer. */
+"Estonia" = "Estonie";
+
+/* No comment provided by engineer. */
+"Eswatini" = "Eswatini";
+
+/* No comment provided by engineer. */
+"Ethiopia" = "Ethiopie";
+
+/* No comment provided by engineer. */
+"Fiji" = "Fidji";
+
+/* No comment provided by engineer. */
+"Finland" = "Finlande";
+
+/* No comment provided by engineer. */
+"France" = "France";
+
+/* No comment provided by engineer. */
+"Gabon" = "Gabon";
+
+/* No comment provided by engineer. */
+"Gambia" = "Gambie";
+
+/* No comment provided by engineer. */
+"Georgia" = "Géorgie";
+
+/* No comment provided by engineer. */
+"Germany" = "Allemagne";
+
+/* No comment provided by engineer. */
+"Ghana" = "Ghana";
+
+/* No comment provided by engineer. */
+"Greece" = "Grèce";
+
+/* No comment provided by engineer. */
+"Grenada" = "Grenade";
+
+/* No comment provided by engineer. */
+"Guatemala" = "Guatemala";
+
+/* No comment provided by engineer. */
+"Guessed: " = "Deviné: ";
+
+/* No comment provided by engineer. */
+"Guinea" = "Guinée";
+
+/* No comment provided by engineer. */
+"Guinea-Bissau" = "Guinée Bissau";
+
+/* No comment provided by engineer. */
+"Guyana" = "Guayana";
+
+/* No comment provided by engineer. */
+"Haiti" = "Haïti";
+
+/* No comment provided by engineer. */
+"Honduras" = "Honduras";
+
+/* No comment provided by engineer. */
+"Hungary" = "Hongrie";
+
+/* No comment provided by engineer. */
+"Iceland" = "Islande";
+
+/* No comment provided by engineer. */
+"India" = "Inde";
+
+/* No comment provided by engineer. */
+"Indonesia" = "Indonésie";
+
+/* No comment provided by engineer. */
+"Iran" = "Iran";
+
+/* No comment provided by engineer. */
+"Iraq" = "Irak";
+
+/* No comment provided by engineer. */
+"Ireland" = "Irlande";
+
+/* No comment provided by engineer. */
+"Israel" = "Israël";
+
+/* No comment provided by engineer. */
+"Italy" = "Italie";
+
+/* No comment provided by engineer. */
+"Ivory Coast" = "Côte d'Ivoire";
+
+/* No comment provided by engineer. */
+"Jamaica" = "Jamaïque";
+
+/* No comment provided by engineer. */
+"Japan" = "Japon";
+
+/* No comment provided by engineer. */
+"Jordan" = "Jordan";
+
+/* No comment provided by engineer. */
+"Kazakhstan" = "Kazakhstan";
+
+/* No comment provided by engineer. */
+"Kenya" = "Kenya";
+
+/* No comment provided by engineer. */
+"Kiribati" = "Kiribati";
+
+/* No comment provided by engineer. */
+"Kosovo" = "Kosovo";
+
+/* No comment provided by engineer. */
+"Kuwait" = "Koweit";
+
+/* No comment provided by engineer. */
+"Kyrgyzstan" = "Kirghizistan";
+
+/* No comment provided by engineer. */
+"Laos" = "Laos";
+
+/* No comment provided by engineer. */
+"Latvia" = "Lettonie";
+
+/* No comment provided by engineer. */
+"Lebanon" = "Liban";
+
+/* No comment provided by engineer. */
+"Lesotho" = "Lesotho";
+
+/* No comment provided by engineer. */
+"Liberia" = "Libéria";
+
+/* No comment provided by engineer. */
+"Libya" = "Libye";
+
+/* No comment provided by engineer. */
+"Liechtenstein" = "Liechtenstein";
+
+/* No comment provided by engineer. */
+"Lithuania" = "Lituanie";
+
+/* No comment provided by engineer. */
+"Luxembourg" = "Luxembourg";
+
+/* No comment provided by engineer. */
+"Madagascar" = "Madagascar";
+
+/* No comment provided by engineer. */
+"Malawi" = "Malawi";
+
+/* No comment provided by engineer. */
+"Malaysia" = "Malaisie";
+
+/* No comment provided by engineer. */
+"Maldives" = "Maldives";
+
+/* No comment provided by engineer. */
+"Mali" = "Mali";
+
+/* No comment provided by engineer. */
+"Malta" = "Malte";
+
+/* No comment provided by engineer. */
+"Marshall Islands" = "Iles Marshall";
+
+/* No comment provided by engineer. */
+"Mauritania" = "Mauritanie";
+
+/* No comment provided by engineer. */
+"Mauritius" = "Maurice";
+
+/* No comment provided by engineer. */
+"Mexico" = "Mexique";
+
+/* No comment provided by engineer. */
+"Micronesia" = "Micronésie";
+
+/* No comment provided by engineer. */
+"Moldova" = "La Moldavie";
+
+/* No comment provided by engineer. */
+"Monaco" = "Monaco";
+
+/* No comment provided by engineer. */
+"Mongolia" = "Mongolie";
+
+/* No comment provided by engineer. */
+"Montenegro" = "Monténégro";
+
+/* No comment provided by engineer. */
+"Morocco" = "Maroc";
+
+/* No comment provided by engineer. */
+"Mozambique" = "Mozambique";
+
+/* No comment provided by engineer. */
+"Myanmar" = "Myanmar";
+
+/* No comment provided by engineer. */
+"Namibia" = "Namibie";
+
+/* No comment provided by engineer. */
+"Nauru" = "Nauru";
+
+/* No comment provided by engineer. */
+"Nepal" = "Népal";
+
+/* No comment provided by engineer. */
+"Netherlands" = "Pays-Bas";
+
+/* No comment provided by engineer. */
+"New Zeland" = "Nouvelle Zélande";
+
+/* No comment provided by engineer. */
+"Nicaragua" = "Nicaragua";
+
+/* No comment provided by engineer. */
+"Niger" = "Niger";
+
+/* No comment provided by engineer. */
+"Nigeria" = "Nigeria";
+
+/* No comment provided by engineer. */
+"Niue" = "Niue";
+
+/* No comment provided by engineer. */
+"North Korea" = "Corée du Nord";
+
+/* No comment provided by engineer. */
+"North Macedonia" = "Macédoine du Nord";
+
+/* No comment provided by engineer. */
+"Norway" = "Norvège";
+
+/* No comment provided by engineer. */
+"Oman" = "Oman";
+
+/* No comment provided by engineer. */
+"Pakistan" = "Pakistan";
+
+/* No comment provided by engineer. */
+"Palau" = "Palau";
+
+/* No comment provided by engineer. */
+"Panama" = "Panama";
+
+/* No comment provided by engineer. */
+"Papua New Guinea" = "Papouasie Nouvelle Guinée";
+
+/* No comment provided by engineer. */
+"Paraguay" = "Le Paraguay";
+
+/* No comment provided by engineer. */
+"Peru" = "Pérou";
+
+/* No comment provided by engineer. */
+"Philippines" = "Philippines";
+
+/* No comment provided by engineer. */
+"Poland" = "Pologne";
+
+/* No comment provided by engineer. */
+"Portugal" = "le Portugal";
+
+/* No comment provided by engineer. */
+"Qatar" = "Qatar";
+
+/* No comment provided by engineer. */
+"Republic of the Congo" = "República del Congo";
+
+/* No comment provided by engineer. */
+"Romania" = "Roumanie";
+
+/* No comment provided by engineer. */
+"Russia" = "Russie";
+
+/* No comment provided by engineer. */
+"Rwanda" = "Rwanda";
+
+/* No comment provided by engineer. */
+"Saint Kitts and Nevis" = "Saint-Christophe-et-Niévès";
+
+/* No comment provided by engineer. */
+"Saint Lucia" = "Sainte-Lucie";
+
+/* No comment provided by engineer. */
+"Saint Vincent and the Grenadines" = "Saint-Vincent-et-les-Grenadines";
+
+/* No comment provided by engineer. */
+"Samoa" = "Samoa";
+
+/* No comment provided by engineer. */
+"San Marino" = "San Marino";
+
+/* No comment provided by engineer. */
+"São Tomé and Príncipe" = "Sao Tomé et Principe";
+
+/* No comment provided by engineer. */
+"Saudi Arabia" = "Arabie Saoudite";
+
+/* No comment provided by engineer. */
+"Scotland" = "Écosse";
+
+/* No comment provided by engineer. */
+"Senegal" = "Sénégal";
+
+/* No comment provided by engineer. */
+"Serbia" = "Serbie";
+
+/* No comment provided by engineer. */
+"Seychelles" = "les Seychelles";
+
+/* No comment provided by engineer. */
+"Sierra Leone" = "Sierra Leone";
+
+/* No comment provided by engineer. */
+"Singapore" = "Singapour";
+
+/* No comment provided by engineer. */
+"Slovakia" = "Slovaquie";
+
+/* No comment provided by engineer. */
+"Slovenia" = "La Slovénie";
+
+/* No comment provided by engineer. */
+"Solomon Islands" = "îles Salomon";
+
+/* No comment provided by engineer. */
+"Somalia" = "Somalie";
+
+/* No comment provided by engineer. */
+"South Africa" = "Afrique du Sud";
+
+/* No comment provided by engineer. */
+"South Korea" = "Corée du Sud";
+
+/* No comment provided by engineer. */
+"South Sudan" = "Soudan du sud";
+
+/* No comment provided by engineer. */
+"Spain" = "Espagne";
+
+/* No comment provided by engineer. */
+"Sri Lanka" = "Sri Lanka";
+
+/* No comment provided by engineer. */
+"Sudan" = "Soudan";
+
+/* No comment provided by engineer. */
+"Suriname" = "Suriname";
+
+/* No comment provided by engineer. */
+"Sweden" = "Suède";
+
+/* No comment provided by engineer. */
+"Switzerland" = "Suisse";
+
+/* No comment provided by engineer. */
+"Syria" = "Syrie";
+
+/* No comment provided by engineer. */
+"Taiwan" = "Taïwan";
+
+/* No comment provided by engineer. */
+"Tajikistan" = "Tadjikistan";
+
+/* No comment provided by engineer. */
+"Tanzania" = "Tanzanie";
+
+/* No comment provided by engineer. */
+"Thailand" = "Thaïlande";
+
+/* No comment provided by engineer. */
+"Togo" = "Togo";
+
+/* No comment provided by engineer. */
+"Tonga" = "Tonga";
+
+/* No comment provided by engineer. */
+"Trinidad and Tobago" = "Trinité-et-Tobago";
+
+/* No comment provided by engineer. */
+"Tunisia" = "Tunisie";
+
+/* No comment provided by engineer. */
+"Turkey" = "Turquie";
+
+/* No comment provided by engineer. */
+"Turkmenistan" = "Turkménistan";
+
+/* No comment provided by engineer. */
+"Tuvalu" = "Tuvalu";
+
+/* No comment provided by engineer. */
+"Uganda" = "Ouganda";
+
+/* No comment provided by engineer. */
+"Ukraine" = "Ukraine";
+
+/* No comment provided by engineer. */
+"United Arab Emirates" = "Emirats Arabes Unis";
+
+/* No comment provided by engineer. */
+"United Kingdom" = "Royaume-Uni";
+
+/* No comment provided by engineer. */
+"United States of America" = "les États-Unis d'Amérique";
+
+/* No comment provided by engineer. */
+"Uruguay" = "Uruguay";
+
+/* No comment provided by engineer. */
+"Uzbekistan" = "Ouzbekistan";
+
+/* No comment provided by engineer. */
+"Vanuatu" = "Vanuatu";
+
+/* No comment provided by engineer. */
+"Vatican" = "Cité du Vatican";
+
+/* No comment provided by engineer. */
+"Venezuela" = "Venezuela";
+
+/* No comment provided by engineer. */
+"Vietnam" = "Vietnam";
+
+/* No comment provided by engineer. */
+"Wales" = "Gales";
+
+/* No comment provided by engineer. */
+"Yemen" = "Yémen";
+
+/* No comment provided by engineer. */
+"Zambia" = "Zambie";
+
+/* No comment provided by engineer. */
+"Zimbabwe" = "Zimbabwe";
+

@@ -18,14 +18,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twoFlags" translatesAutoresizingMaskIntoConstraints="NO" id="pRq-nz-tMv">
-                                <rect key="frame" x="20" y="63.999999999999986" width="335" height="228.66666666666663"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="globeOfFlags" translatesAutoresizingMaskIntoConstraints="NO" id="pRq-nz-tMv">
+                                <rect key="frame" x="20" y="64" width="335" height="265.33333333333331"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="hdN-te-9O8">
-                                <rect key="frame" x="20" y="519.66666666666663" width="335" height="223.33333333333337"/>
+                                <rect key="frame" x="20" y="508" width="335" height="235"/>
                                 <subviews>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dd2-Bh-Nur">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="104"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="110"/>
                                         <color key="backgroundColor" red="0.87450980392156863" green="0.37647058823529411" blue="0.4392156862745098" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="40"/>
                                         <state key="normal" title="Play">
@@ -36,7 +36,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AV-tz-EgO">
-                                        <rect key="frame" x="0.0" y="119" width="335" height="104.33333333333331"/>
+                                        <rect key="frame" x="0.0" y="125" width="335" height="110"/>
                                         <color key="backgroundColor" red="0.87395328279999995" green="0.37546390299999999" blue="0.43920302389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="40"/>
                                         <state key="normal" title="All flags">
@@ -49,17 +49,17 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" distribution="fillEqually" spacing="-5" translatesAutoresizingMaskIntoConstraints="NO" id="1gA-yZ-Kqs">
-                                <rect key="frame" x="20" y="327.66666666666669" width="335" height="157"/>
+                                <rect key="frame" x="5" y="339.33333333333331" width="365" height="133.66666666666669"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="WORLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AV4-kA-NMd">
-                                        <rect key="frame" x="0.0" y="0.0" width="335" height="81"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="70"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="WORLD" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AV4-kA-NMd">
+                                        <rect key="frame" x="0.0" y="0.0" width="365" height="69.333333333333329"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="60"/>
                                         <color key="textColor" red="0.1597058475" green="0.37995791439999999" blue="0.39608532190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLAGS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bye-pk-Sdy">
-                                        <rect key="frame" x="0.0" y="76" width="335" height="81"/>
-                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="70"/>
+                                        <rect key="frame" x="0.0" y="64.333333333333371" width="365" height="69.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="60"/>
                                         <color key="textColor" red="0.1597058475" green="0.37995791439999999" blue="0.39608532190000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -69,12 +69,12 @@
                         <color key="backgroundColor" red="0.54509803921568623" green="0.82745098039215681" blue="0.87450980392156863" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1gA-yZ-Kqs" firstAttribute="centerY" secondItem="Jr2-wX-sef" secondAttribute="centerY" id="1OE-b2-Bta"/>
-                            <constraint firstItem="OoY-Ld-pXd" firstAttribute="trailing" secondItem="1gA-yZ-Kqs" secondAttribute="trailing" constant="20" id="HWt-tS-L4V"/>
+                            <constraint firstItem="OoY-Ld-pXd" firstAttribute="trailing" secondItem="1gA-yZ-Kqs" secondAttribute="trailing" constant="5" id="HWt-tS-L4V"/>
                             <constraint firstItem="OoY-Ld-pXd" firstAttribute="trailing" secondItem="pRq-nz-tMv" secondAttribute="trailing" constant="20" id="KT9-yE-S8H"/>
                             <constraint firstItem="OoY-Ld-pXd" firstAttribute="bottom" secondItem="hdN-te-9O8" secondAttribute="bottom" constant="35" id="P2R-cs-vaM"/>
                             <constraint firstItem="hdN-te-9O8" firstAttribute="leading" secondItem="OoY-Ld-pXd" secondAttribute="leading" constant="20" id="Qtm-YG-3xP"/>
-                            <constraint firstItem="1gA-yZ-Kqs" firstAttribute="top" secondItem="pRq-nz-tMv" secondAttribute="bottom" constant="35" id="VVE-xF-eOU"/>
-                            <constraint firstItem="1gA-yZ-Kqs" firstAttribute="leading" secondItem="OoY-Ld-pXd" secondAttribute="leading" constant="20" id="X95-pB-9bT"/>
+                            <constraint firstItem="1gA-yZ-Kqs" firstAttribute="top" secondItem="pRq-nz-tMv" secondAttribute="bottom" constant="10" id="VVE-xF-eOU"/>
+                            <constraint firstItem="1gA-yZ-Kqs" firstAttribute="leading" secondItem="OoY-Ld-pXd" secondAttribute="leading" constant="5" id="X95-pB-9bT"/>
                             <constraint firstItem="pRq-nz-tMv" firstAttribute="leading" secondItem="OoY-Ld-pXd" secondAttribute="leading" constant="20" id="e0x-zf-MWB"/>
                             <constraint firstItem="OoY-Ld-pXd" firstAttribute="trailing" secondItem="hdN-te-9O8" secondAttribute="trailing" constant="20" id="ihj-I3-vZB"/>
                             <constraint firstItem="hdN-te-9O8" firstAttribute="top" secondItem="1gA-yZ-Kqs" secondAttribute="bottom" constant="35" id="kQl-4i-Be0"/>
@@ -329,7 +329,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="United Arab Emirates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fNH-U4-vVG">
-                                                    <rect key="frame" x="5" y="5" width="205" height="86.666666666666671"/>
+                                                    <rect key="frame" x="10" y="5" width="200" height="86.666666666666671"/>
                                                     <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="25"/>
                                                     <color key="textColor" red="0.26380848880000002" green="0.57208019499999996" blue="0.58824431899999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <nil key="highlightedColor"/>
@@ -341,7 +341,7 @@
                                                 <constraint firstItem="pbh-ju-fgf" firstAttribute="top" secondItem="x3d-ds-4Qc" secondAttribute="top" constant="5" id="Iwu-7p-bzV"/>
                                                 <constraint firstItem="pbh-ju-fgf" firstAttribute="centerY" secondItem="x3d-ds-4Qc" secondAttribute="centerY" id="OSN-qH-07r"/>
                                                 <constraint firstAttribute="bottom" secondItem="fNH-U4-vVG" secondAttribute="bottom" constant="5" id="UFO-BX-1LE"/>
-                                                <constraint firstItem="fNH-U4-vVG" firstAttribute="leading" secondItem="x3d-ds-4Qc" secondAttribute="leading" constant="5" id="X6F-OL-wZs"/>
+                                                <constraint firstItem="fNH-U4-vVG" firstAttribute="leading" secondItem="x3d-ds-4Qc" secondAttribute="leading" constant="10" id="X6F-OL-wZs"/>
                                                 <constraint firstAttribute="trailing" secondItem="pbh-ju-fgf" secondAttribute="trailing" constant="5" id="riD-5u-aso"/>
                                                 <constraint firstItem="pbh-ju-fgf" firstAttribute="leading" secondItem="fNH-U4-vVG" secondAttribute="trailing" constant="10" id="zm6-jM-4jr"/>
                                             </constraints>
@@ -533,7 +533,7 @@
                                                         <rect key="frame" x="0.0" y="190" width="275" height="70"/>
                                                         <color key="backgroundColor" red="0.87395328279999995" green="0.37546390299999999" blue="0.43920302389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="30"/>
-                                                        <state key="normal" title="Egghead">
+                                                        <state key="normal" title="Stewardess">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -544,7 +544,7 @@
                                                         <rect key="frame" x="0.0" y="285" width="275" height="70"/>
                                                         <color key="backgroundColor" red="0.87395328279999995" green="0.37546390299999999" blue="0.43920302389999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="30"/>
-                                                        <state key="normal" title="Stewardess">
+                                                        <state key="normal" title="Egghead">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
@@ -675,19 +675,18 @@
     </scenes>
     <resources>
         <image name="EarthFlag" width="496" height="319"/>
-        <image name="ae" width="183.33332824707031" height="91.666664123535156"/>
+        <image name="ae" width="183" height="91.5"/>
         <image name="arrow2" width="572" height="512"/>
-        <image name="de" width="183.33332824707031" height="110"/>
+        <image name="de" width="183" height="110"/>
+        <image name="globeOfFlags" width="390" height="348"/>
         <image name="goldenFlags" width="575" height="314"/>
         <image name="menuRed" width="120" height="120"/>
         <image name="refreshRed" width="120" height="120"/>
-        <image name="twoFlags" width="1810" height="794"/>
         <image name="victoryBanner" width="623" height="187.33332824707031"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="uz3-cr-Fi5"/>
-        <segue reference="QiX-pr-Vcn"/>
-        <segue reference="ynd-fg-fQB"/>
-        <segue reference="mBZ-dR-4oy"/>
+        <segue reference="iwY-Za-0EE"/>
+        <segue reference="3N4-en-EgL"/>
+        <segue reference="mjB-7w-2xW"/>
     </inferredMetricsTieBreakers>
 </document>

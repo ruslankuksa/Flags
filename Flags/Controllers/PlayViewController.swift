@@ -48,7 +48,10 @@ class PlayViewController: UIViewController {
     
     func loadFlags() {
         
-        for each in allButtons { each.isEnabled = true }
+        for each in allButtons {
+            each.isEnabled = true
+            each.isUserInteractionEnabled = true
+        }
         
         allFlags.shuffle()
         
@@ -86,6 +89,8 @@ class PlayViewController: UIViewController {
         if numberOfLives > 0 && flagNumber < allFlags.count {
             
             if sender.tag == self.correctAnswer {
+                
+                sender.isUserInteractionEnabled = false
                     
                 self.countryNameLabel.textColor = UIColor.green
                     

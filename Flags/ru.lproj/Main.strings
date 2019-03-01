@@ -17,10 +17,10 @@
 "a6d-En-CmM.normalTitle" = "Исследователь";
 
 /* Class = "UILabel"; text = "WORLD"; ObjectID = "AV4-kA-NMd"; */
-"AV4-kA-NMd.text" = "WORLD";
+"AV4-kA-NMd.text" = "ФЛАГИ";
 
 /* Class = "UILabel"; text = "FLAGS"; ObjectID = "bye-pk-Sdy"; */
-"bye-pk-Sdy.text" = "FLAGS";
+"bye-pk-Sdy.text" = "МИРА";
 
 /* Class = "UIButton"; normalTitle = "Play"; ObjectID = "Dd2-Bh-Nur"; */
 "Dd2-Bh-Nur.normalTitle" = "Играть";
@@ -29,7 +29,7 @@
 "dIM-hB-swl.normalTitle" = "Учитель";
 
 /* Class = "UIButton"; normalTitle = "Stewardess"; ObjectID = "F8o-9m-Nh1"; */
-"F8o-9m-Nh1.normalTitle" = "Стюардесса";
+"F8o-9m-Nh1.normalTitle" = "Умник";
 
 /* Class = "UILabel"; text = "United Arab Emirates"; ObjectID = "fNH-U4-vVG"; */
 "fNH-U4-vVG.text" = "United Arab Emirates";
@@ -59,5 +59,5 @@
 "VVb-2Z-PqC.normalTitle" = "Географ";
 
 /* Class = "UIButton"; normalTitle = "Egghead"; ObjectID = "X0E-ep-sz5"; */
-"X0E-ep-sz5.normalTitle" = "Умник";
+"X0E-ep-sz5.normalTitle" = "Стюардесса";
 

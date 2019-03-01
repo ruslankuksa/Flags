@@ -1,0 +1,63 @@
+/* Class = "UIButton"; normalTitle = "Scout"; ObjectID = "1UM-3s-axw"; */
+"1UM-3s-axw.normalTitle" = "Erkunden";
+
+/* Class = "UIButton"; normalTitle = "All flags"; ObjectID = "5AV-tz-EgO"; */
+"5AV-tz-EgO.normalTitle" = "Alle Flaggen";
+
+/* Class = "UIButton"; normalTitle = "Ambassador"; ObjectID = "6S2-wr-uon"; */
+"6S2-wr-uon.normalTitle" = "Botschafter";
+
+/* Class = "UIButton"; normalTitle = "Sailor"; ObjectID = "6Y2-S2-wK8"; */
+"6Y2-S2-wK8.normalTitle" = "Seemann";
+
+/* Class = "UILabel"; text = "Flags"; ObjectID = "7fF-hP-bWe"; */
+"7fF-hP-bWe.text" = "Flaggen";
+
+/* Class = "UIButton"; normalTitle = "Researcher"; ObjectID = "a6d-En-CmM"; */
+"a6d-En-CmM.normalTitle" = "Forscher";
+
+/* Class = "UILabel"; text = "WORLD"; ObjectID = "AV4-kA-NMd"; */
+"AV4-kA-NMd.text" = "WELT";
+
+/* Class = "UILabel"; text = "FLAGS"; ObjectID = "bye-pk-Sdy"; */
+"bye-pk-Sdy.text" = "FLAGGEN";
+
+/* Class = "UIButton"; normalTitle = "Play"; ObjectID = "Dd2-Bh-Nur"; */
+"Dd2-Bh-Nur.normalTitle" = "Abspielen";
+
+/* Class = "UIButton"; normalTitle = "Teacher"; ObjectID = "dIM-hB-swl"; */
+"dIM-hB-swl.normalTitle" = "Lehrer";
+
+/* Class = "UIButton"; normalTitle = "Stewardess"; ObjectID = "F8o-9m-Nh1"; */
+"F8o-9m-Nh1.normalTitle" = "Stewardess";
+
+/* Class = "UILabel"; text = "United Arab Emirates"; ObjectID = "fNH-U4-vVG"; */
+"fNH-U4-vVG.text" = "United Arab Emirates";
+
+/* Class = "UINavigationItem"; title = "Flags"; ObjectID = "hba-5j-HvJ"; */
+"hba-5j-HvJ.title" = "Flaggen";
+
+/* Class = "UILabel"; text = "Германия"; ObjectID = "HkO-bu-Y6j"; */
+"HkO-bu-Y6j.text" = "Германия";
+
+/* Class = "UILabel"; text = "All Flags"; ObjectID = "iMW-8q-OzG"; */
+"iMW-8q-OzG.text" = "Alle Flaggen";
+
+/* Class = "UILabel"; text = "Guessed: 0/20"; ObjectID = "Ioj-Gr-24Z"; */
+"Ioj-Gr-24Z.text" = "Guessed: 0/20";
+
+/* Class = "UIButton"; normalTitle = "Pathfinder"; ObjectID = "knC-uH-G9k"; */
+"knC-uH-G9k.normalTitle" = "Pfadfinder";
+
+/* Class = "UILabel"; text = "120/196"; ObjectID = "rBW-vA-NaH"; */
+"rBW-vA-NaH.text" = "120/196";
+
+/* Class = "UIButton"; normalTitle = "Tourist"; ObjectID = "vD7-PB-c0R"; */
+"vD7-PB-c0R.normalTitle" = "Tourist";
+
+/* Class = "UIButton"; normalTitle = "Geographer"; ObjectID = "VVb-2Z-PqC"; */
+"VVb-2Z-PqC.normalTitle" = "Geograph";
+
+/* Class = "UIButton"; normalTitle = "Egghead"; ObjectID = "X0E-ep-sz5"; */
+"X0E-ep-sz5.normalTitle" = "Egghead";
+
