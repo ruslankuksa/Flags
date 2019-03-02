@@ -34,16 +34,14 @@ class PlayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        allButtons = [flag1, flag2, flag3, flag4]
-        updateUI()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        progressBar.frame.size.width = 1
+        
         lifesBarImages.reverse()
+        
         countryNameLabel.sizeToFit()
         countryNameLabel.numberOfLines = 0
+        
+        allButtons = [flag1, flag2, flag3, flag4]
+        updateUI()
     }
     
     func loadFlags() {

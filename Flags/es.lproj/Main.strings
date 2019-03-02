@@ -8,7 +8,7 @@
 "6S2-wr-uon.normalTitle" = "Embajador";
 
 /* Class = "UIButton"; normalTitle = "Sailor"; ObjectID = "6Y2-S2-wK8"; */
-"6Y2-S2-wK8.normalTitle" = "Marinero";
+"6Y2-S2-wK8.normalTitle" = "General";
 
 /* Class = "UILabel"; text = "Flags"; ObjectID = "7fF-hP-bWe"; */
 "7fF-hP-bWe.text" = "Banderas";
@@ -56,7 +56,7 @@
 "vD7-PB-c0R.normalTitle" = "Turista";
 
 /* Class = "UIButton"; normalTitle = "Geographer"; ObjectID = "VVb-2Z-PqC"; */
-"VVb-2Z-PqC.normalTitle" = "Geógrafo";
+"VVb-2Z-PqC.normalTitle" = "El Ministro";
 
 /* Class = "UIButton"; normalTitle = "Egghead"; ObjectID = "X0E-ep-sz5"; */
 "X0E-ep-sz5.normalTitle" = "Azafata";

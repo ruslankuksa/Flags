@@ -101,7 +101,7 @@ struct FlagsBank {
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Serbia", comment: ""), imageName: "rs"))
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Peru", comment: ""), imageName: "pe"))
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Kenya", comment: ""), imageName: "ke"))
-        flagsLevel4.append(Countries(countryName: NSLocalizedString("Lithuania", comment: ""), imageName: "lt"))
+        flagsLevel4.append(Countries(countryName: NSLocalizedString("England", comment: ""), imageName: "en"))
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Qatar", comment: ""), imageName: "qa"))
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Azerbaijan", comment: ""), imageName: "az"))
         flagsLevel4.append(Countries(countryName: NSLocalizedString("Bulgaria", comment: ""), imageName: "bg"))
@@ -226,13 +226,13 @@ struct FlagsBank {
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Belize", comment: ""), imageName: "bz"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Cook Islands", comment: ""), imageName: "ck"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Niue", comment: ""), imageName: "nu"))
-        flagsLevel10.append(Countries(countryName: NSLocalizedString("England", comment: ""), imageName: "en"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Wales", comment: ""), imageName: "wales"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Estonia", comment: ""), imageName: "ee"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Kosovo", comment: ""), imageName: "ks"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Palau", comment: ""), imageName: "pw"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Ivory Coast", comment: ""), imageName: "ci"))
         flagsLevel10.append(Countries(countryName: NSLocalizedString("Comoros", comment: ""), imageName: "km"))
+        flagsLevel10.append(Countries(countryName: NSLocalizedString("Lithuania", comment: ""), imageName: "lt"))
         
         
         flagsBank.append(flagsLevel1)

@@ -8,7 +8,7 @@
 "6S2-wr-uon.normalTitle" = "Ambassadeur";
 
 /* Class = "UIButton"; normalTitle = "Sailor"; ObjectID = "6Y2-S2-wK8"; */
-"6Y2-S2-wK8.normalTitle" = "Marin";
+"6Y2-S2-wK8.normalTitle" = "Général";
 
 /* Class = "UILabel"; text = "Flags"; ObjectID = "7fF-hP-bWe"; */
 "7fF-hP-bWe.text" = "Drapeaux";
@@ -26,10 +26,10 @@
 "Dd2-Bh-Nur.normalTitle" = "Jouer";
 
 /* Class = "UIButton"; normalTitle = "Teacher"; ObjectID = "dIM-hB-swl"; */
-"dIM-hB-swl.normalTitle" = "Prof";
+"dIM-hB-swl.normalTitle" = "Professeur";
 
 /* Class = "UIButton"; normalTitle = "Stewardess"; ObjectID = "F8o-9m-Nh1"; */
-"F8o-9m-Nh1.normalTitle" = "Hôtesse";
+"F8o-9m-Nh1.normalTitle" = "Intellectuel";
 
 /* Class = "UILabel"; text = "United Arab Emirates"; ObjectID = "fNH-U4-vVG"; */
 "fNH-U4-vVG.text" = "United Arab Emirates";
@@ -56,8 +56,8 @@
 "vD7-PB-c0R.normalTitle" = "Touristique";
 
 /* Class = "UIButton"; normalTitle = "Geographer"; ObjectID = "VVb-2Z-PqC"; */
-"VVb-2Z-PqC.normalTitle" = "Géographe";
+"VVb-2Z-PqC.normalTitle" = "Le ministre";
 
 /* Class = "UIButton"; normalTitle = "Egghead"; ObjectID = "X0E-ep-sz5"; */
-"X0E-ep-sz5.normalTitle" = "Intellectuel";
+"X0E-ep-sz5.normalTitle" = "Hôtesse";
 
