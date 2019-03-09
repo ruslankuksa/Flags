@@ -44,8 +44,6 @@ class AllFlagsViewController: UIViewController, UITableViewDelegate, UITableView
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "flagCell") as! FlagCell
-        cell.countryNameLabel.sizeToFit()
-        cell.countryNameLabel.numberOfLines = 0
         
         DispatchQueue.main.async {
             cell.countryNameLabel.text = self.countries[indexPath.row].countryName
@@ -58,5 +56,4 @@ class AllFlagsViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
     }
-    
 }

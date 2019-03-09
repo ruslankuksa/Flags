@@ -34,7 +34,7 @@ struct FlagsBank {
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Germany", comment: ""), imageName: "de"))
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Canada", comment: ""), imageName: "ca"))
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Italy", comment: ""), imageName: "it"))
-        flagsLevel1.append(Countries(countryName: NSLocalizedString("United Kingdom", comment: ""), imageName: "gb"))
+        flagsLevel1.append(Countries(countryName: NSLocalizedString("United Kingdom", comment: ""), imageName: "uk"))
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Uruguay", comment: ""), imageName: "uy"))
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Russia", comment: ""), imageName: "ru"))
         flagsLevel1.append(Countries(countryName: NSLocalizedString("Argentina", comment: ""), imageName: "ar"))

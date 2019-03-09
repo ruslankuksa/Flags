@@ -21,7 +21,7 @@
 "Dd2-Bh-Nur.normalTitle" = "Грати";
 
 /* Class = "UIButton"; normalTitle = "Stewardess"; ObjectID = "F8o-9m-Nh1"; */
-"F8o-9m-Nh1.normalTitle" = "Стюардеса";
+"F8o-9m-Nh1.normalTitle" = "Інтелектуал";
 
 /* Class = "UILabel"; text = "Германия"; ObjectID = "HkO-bu-Y6j"; */
 "HkO-bu-Y6j.text" = "Германия";
@@ -30,10 +30,10 @@
 "Ioj-Gr-24Z.text" = "Guessed: 0/20";
 
 /* Class = "UIButton"; normalTitle = "Geographer"; ObjectID = "VVb-2Z-PqC"; */
-"VVb-2Z-PqC.normalTitle" = "Географ";
+"VVb-2Z-PqC.normalTitle" = "Міністр";
 
 /* Class = "UIButton"; normalTitle = "Egghead"; ObjectID = "X0E-ep-sz5"; */
-"X0E-ep-sz5.normalTitle" = "Інтелектуал";
+"X0E-ep-sz5.normalTitle" = "Стюардеса";
 
 /* Class = "UIButton"; normalTitle = "Researcher"; ObjectID = "a6d-En-CmM"; */
 "a6d-En-CmM.normalTitle" = "Дослідник";
@@ -60,4 +60,4 @@
 "rBW-vA-NaH.text" = "120/196";
 
 /* Class = "UIButton"; normalTitle = "Tourist"; ObjectID = "vD7-PB-c0R"; */
-"vD7-PB-c0R.normalTitle" = "Tourist";
+"vD7-PB-c0R.normalTitle" = "Турист";

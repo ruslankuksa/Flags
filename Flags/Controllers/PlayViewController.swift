@@ -26,7 +26,6 @@ class PlayViewController: UIViewController {
     private var flagNumber: Int = 0
     private var numberOfLives: Int = 3
     private var numberOfGuessedFlags: Int = 0
-    private let defaults = UserDefaults.standard
     
     private var previousFlags = [String]()
     var difficultLevel: String = ""
@@ -36,9 +35,7 @@ class PlayViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         lifesBarImages.reverse()
-        
-        countryNameLabel.sizeToFit()
-        countryNameLabel.numberOfLines = 0
+        fontResize()
         
         allButtons = [flag1, flag2, flag3, flag4]
         updateUI()
@@ -48,7 +45,9 @@ class PlayViewController: UIViewController {
         
         for each in allButtons {
             each.isEnabled = true
-            each.isUserInteractionEnabled = true
+            if each.isUserInteractionEnabled == false {
+                each.isUserInteractionEnabled = true
+            }
         }
         
         allFlags.shuffle()
@@ -71,15 +70,16 @@ class PlayViewController: UIViewController {
 
     
     func updateUI()  {
-        scoreLabel.text = NSLocalizedString("Guessed: ", comment: "") + "\(numberOfGuessedFlags)/\(allFlags.count)"
-        
-        if flagNumber < allFlags.count && numberOfLives > 0 {
-            loadFlags()
-        }
+        scoreLabel.text = "\(numberOfGuessedFlags)/\(allFlags.count)"
         
         if flagNumber <= allFlags.count && numberOfLives > 0 {
             progressBar.frame.size.width = (view.frame.size.width / 20) * CGFloat(flagNumber)
         }
+        
+        if flagNumber < allFlags.count && numberOfLives > 0 {
+            loadFlags()
+        }
+    
     }
     
     @IBAction func flagButtonPressed(_ sender: UIButton) {
@@ -97,19 +97,18 @@ class PlayViewController: UIViewController {
                         button.isEnabled = false
                     }
                 }
-                    
+            
                 self.numberOfGuessedFlags += 1
                     
             } else {
                     
                 self.numberOfLives -= 1
-                self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyFlag")
+                self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyLife")
                 self.countryNameLabel.textColor = UIColor.red
-                    
+                
                 for each in self.allButtons {
                     each.isEnabled = false
                 }
-                    
             }
             
             flagNumber += 1
@@ -128,6 +127,16 @@ class PlayViewController: UIViewController {
         }
         
         
+    }
+    
+    func fontResize() {
+        let screenBounds = UIScreen.main.bounds
+        switch screenBounds.width {
+        case 320:
+            countryNameLabel.font = UIFont(name: "Gill Sans", size: 40)
+        default:
+            countryNameLabel.font = countryNameLabel.font.withSize(43)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -149,13 +158,15 @@ class PlayViewController: UIViewController {
                     destinationVC.menuButton.setImage(UIImage(named: "menuRed"), for: .normal)
                     destinationVC.refreshButton.setImage(UIImage(named: "refreshRed"), for: .normal)
                     
+                    let defaults = UserDefaults.standard
+                    
                     DispatchQueue.global(qos: .background).async(execute: {
-                        if self.defaults.value(forKey: self.difficultLevel) != nil {
-                            if self.numberOfGuessedFlags > self.defaults.value(forKey: self.difficultLevel) as! Int {
-                                self.defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
+                        if defaults.value(forKey: self.difficultLevel) != nil {
+                            if self.numberOfGuessedFlags > defaults.value(forKey: self.difficultLevel) as! Int {
+                                defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
                             }
                         } else {
-                            self.defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
+                            defaults.setValue(self.numberOfGuessedFlags, forKey: self.difficultLevel)
                         }
                     })
                     

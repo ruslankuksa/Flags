@@ -39,7 +39,7 @@ class LevelsController: UIViewController, UIScrollViewDelegate {
             guessedFlags += defaults.integer(forKey: button.currentTitle!)
             
             if defaults.integer(forKey: button.currentTitle!) == 20 {
-                button.setTitleColor(UIColor(hexString: "#C4E538"), for: .normal)
+                button.setTitleColor(UIColor(hexString: "#FFDA79"), for: .normal)
             }
         }
         
