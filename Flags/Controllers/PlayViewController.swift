@@ -17,7 +17,7 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var flag4: UIButton!
     
     @IBOutlet var progressBar: UIView!
-    @IBOutlet weak var scoreLabel: UILabel!
+    @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet var lifesBarImages: [UIImageView]!
     
     var allFlags = [Countries]()
@@ -30,6 +30,12 @@ class PlayViewController: UIViewController {
     private var previousFlags = [String]()
     var difficultLevel: String = ""
     
+    let timeLeftShapeLayer = CAShapeLayer()
+    var timeInterval: TimeInterval!
+    var endTime: Date?
+    var timer = Timer()
+    let strokeIt = CABasicAnimation(keyPath: "strokeStart")
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -38,8 +44,17 @@ class PlayViewController: UIViewController {
         fontResize()
         
         allButtons = [flag1, flag2, flag3, flag4]
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         updateUI()
     }
+    
+    override func viewWillLayoutSubviews() {
+        drawTimeShape()
+    }
+    
     
     func loadFlags() {
         
@@ -70,65 +85,61 @@ class PlayViewController: UIViewController {
 
     
     func updateUI()  {
-        scoreLabel.text = "\(numberOfGuessedFlags)/\(allFlags.count)"
+        //timerLabel.text = "\(numberOfGuessedFlags)/\(allFlags.count)"
+        timer.invalidate()
         
         if flagNumber <= allFlags.count && numberOfLives > 0 {
             progressBar.frame.size.width = (view.frame.size.width / 20) * CGFloat(flagNumber)
         }
         
         if flagNumber < allFlags.count && numberOfLives > 0 {
+            timeInterval = 15
             loadFlags()
+            timerInitialization()
+        } else {
+            
+            self.performSegue(withIdentifier: "finishGame", sender: self)
         }
     
     }
     
     @IBAction func flagButtonPressed(_ sender: UIButton) {
         
-        if numberOfLives > 0 && flagNumber < allFlags.count {
-            
-            if sender.tag == self.correctAnswer {
+        if sender.tag == self.correctAnswer {
                 
-                sender.isUserInteractionEnabled = false
-                    
-                self.countryNameLabel.textColor = UIColor.green
-                    
-                for button in self.allButtons {
-                    if button.tag != sender.tag {
-                        button.isEnabled = false
-                    }
-                }
+            sender.isUserInteractionEnabled = false
             
-                self.numberOfGuessedFlags += 1
+            self.countryNameLabel.textColor = UIColor.green
                     
-            } else {
-                    
-                self.numberOfLives -= 1
-                self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyLife")
-                self.countryNameLabel.textColor = UIColor.red
-                
-                for each in self.allButtons {
-                    each.isEnabled = false
+            for button in self.allButtons {
+                if button.tag != sender.tag {
+                    button.isEnabled = false
                 }
             }
             
-            flagNumber += 1
-            previousFlags.append(allFlags[correctAnswer].countryName)
-            
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                self.updateUI()
-            }
-            
-        }
-        
-        if numberOfLives == 0 || flagNumber == allFlags.count {
-            DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
-                self.performSegue(withIdentifier: "finishGame", sender: self)
+            self.numberOfGuessedFlags += 1
+                    
+        } else {
+                    
+            self.numberOfLives -= 1
+            self.lifesBarImages[self.numberOfLives].image = UIImage(named: "emptyLife")
+            self.countryNameLabel.textColor = UIColor.red
+                
+            for each in self.allButtons {
+                each.isEnabled = false
             }
         }
-        
+            
+        flagNumber += 1
+        previousFlags.append(allFlags[correctAnswer].countryName)
+            
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(1)) {
+            self.updateUI()
+        }
         
     }
     
+    // Change font and size of it if app runs on iPhone 5s or SE
     func fontResize() {
         let screenBounds = UIScreen.main.bounds
         switch screenBounds.width {
@@ -136,6 +147,44 @@ class PlayViewController: UIViewController {
             countryNameLabel.font = UIFont(name: "Gill Sans", size: 40)
         default:
             countryNameLabel.font = countryNameLabel.font.withSize(43)
+        }
+    }
+    
+    
+    //MARK: - CircleTimer
+    func timerInitialization() {
+        drawTimeShape()
+        timerLabel.text = timeInterval.time
+        
+        strokeIt.fromValue = 0
+        strokeIt.toValue = 1
+        strokeIt.duration = timeInterval
+        
+        timeLeftShapeLayer.add(strokeIt, forKey: nil)
+        endTime = Date().addingTimeInterval(timeInterval)
+        timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
+    }
+    
+    func drawTimeShape() {
+        timeLeftShapeLayer.path = UIBezierPath(arcCenter: CGPoint(x: timerLabel.frame.midX, y: timerLabel.frame.midY), radius: 25, startAngle: -90.degreesToRadians, endAngle: 270.degreesToRadians, clockwise: true).cgPath
+        timeLeftShapeLayer.strokeColor = UIColor(hexString: "FFDA79").cgColor
+        timeLeftShapeLayer.fillColor = UIColor.clear.cgColor
+        timeLeftShapeLayer.lineWidth = 5
+        view.layer.addSublayer(timeLeftShapeLayer)
+    }
+    
+    @objc func updateTime() {
+        if timeInterval > 0.5 {
+            timeInterval = endTime?.timeIntervalSinceNow ?? 0
+            timerLabel.text = timeInterval.time
+        } else {
+            //timerLabel.text = "0"
+            //timer.invalidate()
+            numberOfLives -= 1
+            lifesBarImages[numberOfLives].image = UIImage(named: "emptyLife")
+            flagNumber += 1
+            previousFlags.append(allFlags[correctAnswer].countryName)
+            updateUI()
         }
     }
     
@@ -196,5 +245,17 @@ extension UIColor {
             (a, r, g, b) = (255, 0, 0, 0)
         }
         self.init(red: CGFloat(r) / 255, green: CGFloat(g) / 255, blue: CGFloat(b) / 255, alpha: CGFloat(a) / 255)
+    }
+}
+
+extension TimeInterval {
+    var time: String {
+        return String(format:"%0d", Int(self))
+    }
+}
+
+extension Int {
+    var degreesToRadians : CGFloat {
+        return CGFloat(self) * .pi / 180
     }
 }

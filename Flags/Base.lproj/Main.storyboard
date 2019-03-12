@@ -126,8 +126,12 @@
                                             <constraint firstAttribute="height" constant="40" id="2te-F5-zZ8"/>
                                         </constraints>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20/20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-Gr-24Z" userLabel="scoreLabel">
-                                        <rect key="frame" x="302" y="66" width="65" height="25.666666666666671"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ioj-Gr-24Z" userLabel="scoreLabel">
+                                        <rect key="frame" x="310" y="46" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="NxO-tQ-EWW"/>
+                                            <constraint firstAttribute="height" constant="50" id="fFA-ob-hWd"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Semibold" family="American Typewriter" pointSize="22"/>
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -137,11 +141,11 @@
                                 <constraints>
                                     <constraint firstItem="pbo-r2-i91" firstAttribute="leading" secondItem="B6P-Lx-vsH" secondAttribute="leading" constant="8" id="1Mh-De-gFT"/>
                                     <constraint firstItem="Jxd-HO-GFT" firstAttribute="top" secondItem="B6P-Lx-vsH" secondAttribute="top" constant="52" id="Kjw-Ic-ZD6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Ioj-Gr-24Z" secondAttribute="trailing" constant="8" id="eAS-lI-DuX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ioj-Gr-24Z" secondAttribute="trailing" constant="15" id="eAS-lI-DuX"/>
                                     <constraint firstItem="pbo-r2-i91" firstAttribute="top" secondItem="B6P-Lx-vsH" secondAttribute="top" constant="52" id="fkK-Bw-fbA"/>
                                     <constraint firstAttribute="height" constant="125" id="iHe-tl-Rsc"/>
                                     <constraint firstItem="Jxd-HO-GFT" firstAttribute="centerX" secondItem="B6P-Lx-vsH" secondAttribute="centerX" id="iNW-l0-dQS"/>
-                                    <constraint firstItem="Ioj-Gr-24Z" firstAttribute="top" secondItem="B6P-Lx-vsH" secondAttribute="top" constant="66" id="nRN-Cj-aCz"/>
+                                    <constraint firstItem="Ioj-Gr-24Z" firstAttribute="top" secondItem="B6P-Lx-vsH" secondAttribute="top" constant="46" id="nRN-Cj-aCz"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="XMA-5T-Zy5" userLabel="Flags">
@@ -239,7 +243,7 @@
                         <outlet property="flag3" destination="nwd-WB-WPV" id="rsg-aF-7DT"/>
                         <outlet property="flag4" destination="jGq-dh-MxA" id="1Zk-KM-SAK"/>
                         <outlet property="progressBar" destination="6hb-2O-7Qw" id="u0Y-tP-7jK"/>
-                        <outlet property="scoreLabel" destination="Ioj-Gr-24Z" id="Kb9-dc-T3X"/>
+                        <outlet property="timerLabel" destination="Ioj-Gr-24Z" id="Kb9-dc-T3X"/>
                         <outletCollection property="lifesBarImages" destination="G1l-BJ-Ro3" collectionClass="NSMutableArray" id="Uip-av-LfE"/>
                         <outletCollection property="lifesBarImages" destination="Svz-Gg-bb6" collectionClass="NSMutableArray" id="rrR-x7-QvW"/>
                         <outletCollection property="lifesBarImages" destination="28u-g8-VA8" collectionClass="NSMutableArray" id="iDD-DR-hOT"/>
